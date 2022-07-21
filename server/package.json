@@ -1,0 +1,28 @@
+{
+  "name": "cellworks-portal-scraper",
+  "version": "1.0.0",
+  "description": "Retrieves costs of electronic repair parts and applies cost of labor and shipping on a day to day basis to cost to quote for customers.",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "ts-node --preferTsExts --esm --experimental-specifier-resolution node src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dan-Mizu/Cellworks-Repair-Portal.git"
+  },
+  "author": "DanMizu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dan-Mizu/Cellworks-Repair-Portal/issues"
+  },
+  "homepage": "https://github.com/Dan-Mizu/Cellworks-Repair-Portal#readme",
+  "dependencies": {
+    "firebase-admin": "^10.3.0",
+    "puppeteer": "^14.4.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}

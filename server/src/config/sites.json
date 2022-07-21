@@ -1,0 +1,60 @@
+[
+    {
+        "storefront": "Mobile Sentrix",
+        "container": "#catalog-listing > div.category-products.main-list-category.deal-category > ul > li.item",
+        "links": [
+            "https://www.mobilesentrix.com/replacement-parts/apple/iphone-parts/iphone-13-pro-max",
+            "https://www.mobilesentrix.com/replacement-parts/apple/iphone-parts/iphone-13-pro",
+            "https://www.mobilesentrix.com/replacement-parts/apple/iphone-parts/iphone-13",
+            "https://www.mobilesentrix.com/replacement-parts/apple/iphone-parts/iphone-13?p=2",
+            "https://www.mobilesentrix.com/replacement-parts/apple/iphone-parts/iphone-13-mini"
+        ],
+        "elements": {
+            "link": {
+                "selector": "fieldset > div.cat_prod_cell > a",
+                "attribute": "href"
+            },
+            "name": {
+                "selector": "fieldset > div.cat_prod_cell > a",
+                "attribute": "title"
+            },
+            "cost": {
+                "selector": "fieldset > div.cat_prod_cell > div.price-box > span > span.price"
+            },
+            "image": {
+                "selector": "fieldset > div.cat_prod_cell > a > img.small-img",
+                "attribute": "data-original"
+            },
+            "badge_image": {
+                "selector": "fieldset > div.cat_prod_cell > a > div.product-budges > img.badgesImg",
+                "attribute": "src"
+            }
+        }
+    },
+    {
+        "storefront": "FixEZ",
+        "container": "#layer-product-list > div.products.wrapper.grid.columns4.products-grid > ol > li.item",
+        "links": [
+            "https://www.fixez.com/store/iphone/iphone-13-pro-max?product_list_limit=all",
+            "https://www.fixez.com/store/iphone/iphone-13-pro?product_list_limit=all",
+            "https://www.fixez.com/store/iphone/iphone-13-mini?product_list_limit=all",
+            "https://www.fixez.com/store/iphone/iphone-13?product_list_limit=all"
+        ],
+        "elements": {
+            "link": {
+                "selector": "div.product-item-info > div.product.details.product-item-details > strong > a",
+                "attribute": "href"
+            },
+            "name": {
+                "selector": "div.product-item-info > div.product.details.product-item-details > strong > a"
+            },
+            "cost": {
+                "selector": "div.product-item-info > div.product.details.product-item-details > div.price-box > span.price-container > span.price-wrapper > span.price"
+            },
+            "image": {
+                "selector": "div.product-item-info > div.product.photo.product-item-photo > a > img.default_image",
+                "attribute": "data-src"
+            }
+        }
+    }
+]

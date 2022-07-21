@@ -1,0 +1,104 @@
+{
+    "blacklist": [
+        "Anti-Dust",
+        "Tempered Glass",
+        "Mold",
+        "Back Housing",
+        "to Lightning Cable"
+    ],
+    "whitelist": [
+        "LED",
+        "LCD",
+        "OLED",
+        "Touch",
+        "Flex Cable",
+        "Cable",
+        "Cables",
+        "Battery",
+        "Charging Port",
+        "Camera",
+        "Speaker",
+        "Mic",
+        "Bluetooth",
+        "Lens",
+        "Back Glass",
+        "Home Button",
+        "Infrared",
+        "Flashlight",
+        "GPS",
+        "Antenna",
+        "Vibrator",
+        "Earpiece",
+        "Bottom Screws",
+        "Buttons",
+        "Button",
+        "Driver",
+        "Proximity",
+        "IC",
+        "SIM",
+        "Sim",
+        "Power",
+        "Volume",
+        "Mute",
+        "Loudspeaker"
+    ],
+    "categories": [
+        {
+            "name": "Screen",
+            "keywords": [
+                "Screen",
+                "LCD",
+                "LED",
+                "OLED"
+            ]
+        },
+        {
+            "name": "Battery",
+            "keywords": [
+                "Battery"
+            ]
+        },
+        {
+            "name": "Camera",
+            "keywords": [
+                "Camera"
+            ]
+        },
+        {
+            "name": "Speaker",
+            "keywords": [
+                "Speaker",
+                "Loudspeaker",
+                "Earpiece"
+            ]
+        },
+        {
+            "name": "Button",
+            "keywords": [
+                "Button",
+                "Buttons"
+            ]
+        },
+        {
+            "name": "SIM",
+            "keywords": [
+                "SIM",
+                "Sim"
+            ]
+        },
+        {
+            "name": "Cable",
+            "keywords": [
+                "Flex",
+                "Cable",
+                "Cables"
+            ]
+        },
+        {
+            "name": "Port",
+            "keywords": [
+                "Port"
+            ]
+        }
+    ]
+}
