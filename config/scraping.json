@@ -4,47 +4,41 @@
         "Tempered Glass",
         "Mold",
         "Back Housing",
-        "to Lightning Cable"
+        "to Lightning Cable",
+        "No Logo",
+        "Tester Cable",
+        "Adhesive",
+        "Protective Tape",
+        "Flex Cable"
     ],
     "whitelist": [
         "LED",
         "LCD",
         "OLED",
-        "Touch",
-        "Flex Cable",
-        "Cable",
-        "Cables",
         "Battery",
         "Charging Port",
         "Camera",
         "Speaker",
         "Mic",
-        "Bluetooth",
         "Lens",
         "Back Glass",
         "Home Button",
         "Infrared",
         "Flashlight",
-        "GPS",
-        "Antenna",
-        "Vibrator",
         "Earpiece",
-        "Bottom Screws",
-        "Buttons",
-        "Button",
-        "Driver",
         "Proximity",
         "IC",
-        "SIM",
-        "Sim",
-        "Power",
-        "Volume",
-        "Mute",
         "Loudspeaker"
     ],
     "categories": [
         {
-            "name": "Screen",
+            "name": "ic chip",
+            "keywords": [
+                "IC"
+            ]
+        },
+        {
+            "name": "screen",
             "keywords": [
                 "Screen",
                 "LCD",
@@ -53,51 +47,30 @@
             ]
         },
         {
-            "name": "Battery",
+            "name": "battery",
             "keywords": [
                 "Battery"
             ]
         },
         {
-            "name": "Camera",
+            "name": "camera-lens",
+            "keywords": [
+                "Camera Lens",
+                "Camera Bezel"
+            ]
+        },
+        {
+            "name": "camera",
             "keywords": [
                 "Camera"
             ]
         },
         {
-            "name": "Speaker",
+            "name": "speaker",
             "keywords": [
                 "Speaker",
                 "Loudspeaker",
                 "Earpiece"
-            ]
-        },
-        {
-            "name": "Button",
-            "keywords": [
-                "Button",
-                "Buttons"
-            ]
-        },
-        {
-            "name": "SIM",
-            "keywords": [
-                "SIM",
-                "Sim"
-            ]
-        },
-        {
-            "name": "Cable",
-            "keywords": [
-                "Flex",
-                "Cable",
-                "Cables"
-            ]
-        },
-        {
-            "name": "Port",
-            "keywords": [
-                "Port"
             ]
         }
     ]

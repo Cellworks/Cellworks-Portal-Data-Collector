@@ -9,3 +9,6 @@ config.json
 
 # TS Builds
 dist/
+
+# Logs
+logs/

@@ -4,5 +4,14 @@
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"task.autoDetect": "on",
 	"editor.detectIndentation": true,
-	"cSpell.words": ["cellworks"]
+	"cSpell.words": [
+		"cellworks",
+		"domcontentloaded",
+		"fieldset",
+		"firestore",
+		"fixez",
+		"mobilesentrix",
+		"OLED",
+		"Sentrix"
+	]
 }

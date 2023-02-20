@@ -1,24 +1,50 @@
 // Main Server
 
-//dependency: file parsing
-import path from "path";
+// imports
+import util from "util";
+import utility from "./utility";
+import scrape from "./scrape";
+import database from "./database";
+import log from "./log";
 
-//imports
-const utility = require(path.join(__dirname, "utility"));
-const database = require(path.join(__dirname, "database"));
-const scrape = require(path.join(__dirname, "scrape"));
+// config
+import config from "../config/config.json";
+
+//init logging
+log.initLogs();
+
+//send console logs to server log file
+console.log = function () {
+	//format message
+	const message = util.format.apply(null, arguments as any | any[]);
+
+	//log to file
+	log.message(message, {
+		file: ["server", "debug"],
+	});
+
+	//log to console
+	process.stdout.write(message + "\n");
+};
+console.error = console.log;
 
 async function run() {
-	//start time
+	// beginning scrape
+	console.log("Beginning Data Collection...");
+
+	// delete old data
+	if (config.updateDatabase) await database.deletePath("parts");
+
+	// start time
 	let startTime: Date = new Date();
 
-	//scrape
-	let entries = await scrape.scrapeData();
+	// scrape
+	let entries: number = await scrape.scrapeData();
 
-	//end time
+	// end time
 	let endTime: Date = new Date();
 
-	//display time elapsed
+	// display time elapsed
 	console.log(
 		"Time Elapsed: " +
 			utility.formatSeconds(
@@ -26,11 +52,8 @@ async function run() {
 			)
 	);
 
-	//store
-	database.setValue("entries", entries);
-
-	//display total entries
-	console.log("Total Entries: " + entries.length);
+	// display total entries
+	console.log("Total Entries: " + entries);
 }
 
 try {

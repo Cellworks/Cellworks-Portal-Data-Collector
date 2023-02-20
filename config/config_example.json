@@ -1,4 +1,9 @@
 {
+    "debug": false,
+    "updateDatabase": false,
+    "paths": {
+        "logs": "logs"
+    },
     "login": {
         "mobilesentrix": {
             "user": "",
