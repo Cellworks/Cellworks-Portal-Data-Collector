@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    <b>Collects data from specified websites and stores it within a Firebase RTD, which is used by the CellWorks Portal App.</b>
+    <b>Collects data from specified websites and stores it within a Firebase Database, where this data can then be used by other apps to easily access the cost of certain electronics parts.</b>
 </p>
 
 <p align="center">

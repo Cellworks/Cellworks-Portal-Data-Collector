@@ -1,0 +1,77 @@
+{
+    "blacklist": [
+        "Anti-Dust",
+        "Tempered Glass",
+        "Mold",
+        "Back Housing",
+        "to Lightning Cable",
+        "No Logo",
+        "Tester Cable",
+        "Adhesive",
+        "Protective Tape",
+        "Flex Cable"
+    ],
+    "whitelist": [
+        "LED",
+        "LCD",
+        "OLED",
+        "Battery",
+        "Charging Port",
+        "Camera",
+        "Speaker",
+        "Mic",
+        "Lens",
+        "Back Glass",
+        "Home Button",
+        "Infrared",
+        "Flashlight",
+        "Earpiece",
+        "Proximity",
+        "IC",
+        "Loudspeaker"
+    ],
+    "categories": [
+        {
+            "name": "ic chip",
+            "keywords": [
+                "IC"
+            ]
+        },
+        {
+            "name": "screen",
+            "keywords": [
+                "Screen",
+                "LCD",
+                "LED",
+                "OLED"
+            ]
+        },
+        {
+            "name": "battery",
+            "keywords": [
+                "Battery"
+            ]
+        },
+        {
+            "name": "camera-lens",
+            "keywords": [
+                "Camera Lens",
+                "Camera Bezel"
+            ]
+        },
+        {
+            "name": "camera",
+            "keywords": [
+                "Camera"
+            ]
+        },
+        {
+            "name": "speaker",
+            "keywords": [
+                "Speaker",
+                "Loudspeaker",
+                "Earpiece"
+            ]
+        }
+    ]
+}

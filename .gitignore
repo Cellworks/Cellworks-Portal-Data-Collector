@@ -6,3 +6,9 @@ node_modules/
 
 # Sensitive Files
 config.json
+
+# TS Builds
+dist/
+
+# Logs
+logs/
