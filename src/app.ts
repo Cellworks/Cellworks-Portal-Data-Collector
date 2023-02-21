@@ -28,9 +28,63 @@ console.log = function () {
 };
 console.error = console.log;
 
+// run function at certain hour
+function runAtHour(hour: number, callback: Function) {
+	// get the current time
+	var now = utility.getTimezone(new Date());
+
+	// init start
+	var start: Date;
+
+	// init wait
+	var wait: number;
+
+	// run today (hour is coming up)
+	if (now.getUTCHours() < hour) {
+		start = utility.getTimezone(
+			new Date(
+				now.getFullYear(),
+				now.getMonth(),
+				now.getDate(),
+				hour,
+				0,
+				0,
+				0
+			)
+		);
+	}
+	// run tomorrow (hour already passed)
+	else {
+		start = utility.getTimezone(
+			new Date(
+				now.getFullYear(),
+				now.getMonth(),
+				now.getDate() + 1,
+				8,
+				0,
+				0,
+				0
+			)
+		);
+	}
+
+	// time until run
+	wait = start.getTime() - now.getTime();
+
+	// log
+	log.message("Will run in " + utility.formatSeconds(wait / 1000));
+
+	// wait for the hour to come up
+	setTimeout(() => {
+		// run provided callback
+		callback();
+	}, wait);
+}
+
+// run data collection
 async function run() {
 	// beginning scrape
-	console.log("Beginning Data Collection...");
+	log.message("Beginning Data Collection...");
 
 	// delete old data
 	if (config.updateDatabase) await database.deletePath("parts");
@@ -45,7 +99,7 @@ async function run() {
 	let endTime: Date = new Date();
 
 	// display time elapsed
-	console.log(
+	log.message(
 		"Time Elapsed: " +
 			utility.formatSeconds(
 				(endTime.getTime() - startTime.getTime()) / 1000
@@ -53,14 +107,15 @@ async function run() {
 	);
 
 	// display total entries
-	console.log("Total Entries: " + entries);
+	log.message("Total Entries: " + entries);
 
 	// queue next run
-	utility.runAtHour(20, run);
+	runAtHour(config.runAtHour, run);
 }
 
+// start
 try {
-	utility.runAtHour(20, run);
+	runAtHour(config.runAtHour, run);
 } catch (error) {
 	console.error(error);
 }
