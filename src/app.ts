@@ -54,10 +54,13 @@ async function run() {
 
 	// display total entries
 	console.log("Total Entries: " + entries);
+
+	// queue next run
+	utility.runAtHour(20, run);
 }
 
 try {
-	run();
+	utility.runAtHour(20, run);
 } catch (error) {
 	console.error(error);
 }
