@@ -115,6 +115,7 @@ async function run() {
 
 // start
 try {
+	log.message("Data Collector Running...")
 	runAtHour(config.runAtHour, run);
 } catch (error) {
 	console.error(error);

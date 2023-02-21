@@ -1,4 +1,5 @@
 {
+    "runAtHour": 24,
     "debug": false,
     "updateDatabase": false,
     "paths": {
