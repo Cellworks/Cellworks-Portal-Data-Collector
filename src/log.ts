@@ -62,9 +62,9 @@ export default {
 		//if its a new day, refresh stored write streams
 		if (this.currentDay !== date) {
 			//end every stored write stream
-            for (const writeStream of Object.entries(this.logFile)) {
-                writeStream[1].end();
-            }
+			for (const writeStream of Object.entries(this.logFile)) {
+				writeStream[1].end();
+			}
 
 			//reset stored write streams
 			this.logFile = {};
