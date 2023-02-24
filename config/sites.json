@@ -5,10 +5,35 @@
             "iphone": {
                 "linkPath": "apple/iphone-parts",
                 "version": {
+                    "14-pro-max": "iphone-14-pro-max",
+                    "14-pro": "iphone-14-pro",
+                    "14-plus": "iphone-14-plus",
+                    "14": "iphone-14",
                     "13-pro-max": "iphone-13-pro-max",
                     "13-pro": "iphone-13-pro",
                     "13": "iphone-13",
-                    "13-mini": "iphone-13-mini"
+                    "13-mini": "iphone-13-mini",
+                    "se-22": "iphone-se-2022",
+                    "12-pro-max": "iphone-12-pro-max",
+                    "12-pro": "iphone-12-pro",
+                    "12": "iphone-12",
+                    "12-mini": "iphone-12-mini",
+                    "11-pro-max": "iphone-11-pro-max",
+                    "11-pro": "iphone-11-pro",
+                    "11": "iphone-11",
+                    "xs-max": "iphone-xs-max",
+                    "xs": "iphone-xs",
+                    "xr": "iphone-xr",
+                    "x": "iphone-x",
+                    "se-20": "iphone-se-2020",
+                    "8-plus": "iphone-8-plus",
+                    "8": "iphone-8",
+                    "7-plus": "iphone-7-plus",
+                    "7": "iphone-7",
+                    "6s-plus": "iphone-6s-plus",
+                    "6s": "iphone-6s",
+                    "6-plus": "iphone-6-plus",
+                    "6": "iphone-6"
                 }
             }
         },
@@ -48,10 +73,34 @@
             "iphone": {
                 "linkPath": "iphone",
                 "version": {
+                    "14-pro-max": "iphone-14-pro-max",
+                    "14-pro": "iphone-14-pro",
+                    "14-plus": "iphone-14-plus",
+                    "14": "iphone-14",
                     "13-pro-max": "iphone-13-pro-max",
                     "13-pro": "iphone-13-pro",
                     "13": "iphone-13",
-                    "13-mini": "iphone-13-mini"
+                    "13-mini": "iphone-13-mini",
+                    "12-pro-max": "iphone-12-pro-max",
+                    "12-pro": "iphone-12-pro",
+                    "12": "iphone-12",
+                    "12-mini": "iphone-12-mini",
+                    "11-pro-max": "iphone-11-pro-max",
+                    "11-pro": "iphone-11-pro",
+                    "11": "iphone-11",
+                    "xs-max": "iphone-xs-max",
+                    "xs": "iphone-xs",
+                    "xr": "iphone-xr",
+                    "x": "iphone-x",
+                    "se-20": "iphone-se-2020",
+                    "8-plus": "iphone-8-plus",
+                    "8": "iphone-8",
+                    "7-plus": "iphone-7-plus",
+                    "7": "iphone-7",
+                    "6s-plus": "iphone-6s-plus",
+                    "6s": "iphone-6s",
+                    "6-plus": "iphone-6-plus",
+                    "6": "iphone-6"
                 }
             }
         },

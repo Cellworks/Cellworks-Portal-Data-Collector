@@ -6,7 +6,7 @@ import database from "./database";
 import log from "./log";
 
 // get data
-import config from "../config/config.json"
+import config from "../config/config.json";
 import siteData from "../config/sites.json";
 import scrapeConfig from "../config/scraping.json";
 
@@ -63,11 +63,19 @@ export default {
 				for (const version of Object.entries(device[1].version)) {
 					// create link for this device and version
 					let link = site[1].link
-						.replace("<device>", device[1].linkPath)
-						.replace("<version>", version[1]);
+						.replace("<device>", String(device[1].linkPath))
+						.replace("<version>", String(version[1]));
 
 					// log
-					console.log("[" + site[1].storefront + "] Scraping " + device[0] + "-" + version[0] + "...")
+					console.log(
+						"[" +
+							site[1].storefront +
+							"] Scraping " +
+							device[0] +
+							"-" +
+							version[0] +
+							"..."
+					);
 
 					// scrape site
 					await scrape(
@@ -139,7 +147,11 @@ async function scrape(
 		site.setDefaultNavigationTimeout(0);
 
 		// go to link in vb
-		await site.goto(page, { waitUntil: "domcontentloaded" });
+		try {
+			await site.goto(page, { waitUntil: "domcontentloaded" });
+		} catch (err) {
+			log.message("Error loading page: " + JSON.stringify(err));
+		}
 
 		// find how many pages
 		let itemElement: ElementHandle<Element>[] = await site.$$(

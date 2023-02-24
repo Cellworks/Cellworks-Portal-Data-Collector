@@ -9,7 +9,8 @@
         "Tester Cable",
         "Adhesive",
         "Protective Tape",
-        "Flex Cable"
+        "Flex Cable",
+        "IC"
     ],
     "whitelist": [
         "LED",
@@ -27,16 +28,9 @@
         "Flashlight",
         "Earpiece",
         "Proximity",
-        "IC",
         "Loudspeaker"
     ],
     "categories": [
-        {
-            "name": "ic chip",
-            "keywords": [
-                "IC"
-            ]
-        },
         {
             "name": "screen",
             "keywords": [

@@ -115,8 +115,26 @@ async function run() {
 
 // start
 try {
-	log.message("Data Collector Running...")
-	runAtHour(config.runAtHour, run);
+	// run once
+	if (config.runRightAway) {
+		// log
+		log.message("Data Collector Running Once...");
+
+		// run
+		run();
+	}
+	// run at a specific hour every day
+	else {
+		// log
+		log.message(
+			"Data Collector Running At Hour " +
+				config.runAtHour +
+				" Every Day..."
+		);
+
+		// run
+		runAtHour(config.runAtHour, run);
+	}
 } catch (error) {
 	console.error(error);
 }

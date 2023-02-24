@@ -1,4 +1,5 @@
 {
+    "runRightAway": true,
     "runAtHour": 24,
     "debug": false,
     "updateDatabase": false,
